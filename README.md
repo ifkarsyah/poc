@@ -2,6 +2,12 @@
 
 This is my personal sandbox where I explore, learn, and test various technologies and concepts. The goal is to dive deep into new tools, frameworks, and patterns by implementing small-scale projects and experiments.
 
+## My Toolkit for Quick Exploration
+The following tools are used for quick exploration and experimentation—not intended for production:
+- **Faker**: A Python library for generating fake data for testing purposes.
+- **SQLite**: Lightweight relational database for fast prototyping.
+- **DuckDB**: An in-process SQL OLAP database, optimized for analytical queries.
+
 
 ## Current Explorations
 
