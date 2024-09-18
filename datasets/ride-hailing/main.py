@@ -4,14 +4,15 @@ import random
 import uuid
 import sqlite3
 
+
+# A. FAKER + PANDAS
+fake = Faker()
+
 # Number of records to generate
 NUM_DRIVERS = 1000
 NUM_PASSENGERS = 2000
 NUM_RIDES = 5000
 NUM_VEHICLES = 1000
-
-# Initialize Faker
-fake = Faker()
 
 # 1. Generate Drivers Data (Using range() for unique IDs)
 drivers = []
@@ -85,17 +86,17 @@ for ride in rides_df.itertuples():
 
 payments_df = pd.DataFrame(payments)
 
-# SQLite database connection
+# B: SQLITE
 conn = sqlite3.connect('ride_hailing_service.db')
 
-# Save data to SQLite tables
+# 1. Save pandas df to SQLite tables
 drivers_df.to_sql('drivers', conn, if_exists='replace', index=False)
 passengers_df.to_sql('passengers', conn, if_exists='replace', index=False)
 vehicles_df.to_sql('vehicles', conn, if_exists='replace', index=False)
 rides_df.to_sql('rides', conn, if_exists='replace', index=False)
 payments_df.to_sql('payments', conn, if_exists='replace', index=False)
 
-# Commit and close the SQLite connection
+# 2. Commit and close the SQLite connection
 conn.commit()
 conn.close()
 
