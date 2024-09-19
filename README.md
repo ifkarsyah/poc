@@ -4,9 +4,10 @@ This is my personal sandbox where I explore, learn, and test various technologie
 
 ## My Toolkit for Quick Exploration
 The following tools are used for quick exploration and experimentation—not intended for production:
-- **Faker**: A Python library for generating fake data for testing purposes.
-- **SQLite**: Lightweight relational database for fast prototyping.
-- **DuckDB**: An in-process SQL OLAP database, optimized for analytical queries.
+- **Faker**: library for generating fake data for testing purposes.
+- **SQLite**: lightweight relational database for fast prototyping.
+- **DuckDB**: in-process SQL OLAP database, optimized for analytical queries.
+- **dbml**: DSL language designed to define and document database schemas and structures
 
 
 ## Current Explorations
